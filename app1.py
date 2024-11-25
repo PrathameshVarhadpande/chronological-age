@@ -166,6 +166,7 @@ def get_user_input():
 
 # Display the form to the user
 st.title("Chronological Age Prediction Model")
+st.write("Team Members: Prathamesh Ravindra Varhadpande, Nikhil Gokhale, Nachiket Shyam Dabhade")
 st.write("Please enter your health details:")
 
 
