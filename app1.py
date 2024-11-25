@@ -10,7 +10,7 @@ model = joblib.load('best_xgb_model.pkl')  # Replace with your model file path
 def get_user_input():
     # Input fields
     st.write("Use formula: (Your Cholesterol Level - 148.8815)/(331.3306-148.8815)")
-    cholesterol_level = st.number_input("Cholesterol Level (mg/dL)  Use formula: (Your Cholesterol Level - 148.8815)/(331.3306-148.8815)", min_value=0.0, max_value=500.0, value=200.0, step=0.1)
+    cholesterol_level = st.number_input("Cholesterol Level (mg/dL)", min_value=0.0, max_value=500.0, value=200.0, step=0.1)
     st.write("Use formula: (Your BMI - 12.0499)/(43.32987-12.0499)")
     bmi = st.number_input("BMI", min_value=0.0, max_value=50.0, value=25.0, step=0.1)
     st.write("Use formula: (Your Blood Glucose Level - 69.86688)/(185.7361-69.86688)")
