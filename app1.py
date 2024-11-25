@@ -9,17 +9,29 @@ model = joblib.load('best_xgb_model.pkl')  # Replace with your model file path
 # Function to get user input and create the feature DataFrame
 def get_user_input():
     # Input fields
+    st.write("Use formula: (Your Cholesterol Level - 148.8815)/(331.3306-148.8815)")
     cholesterol_level = st.number_input("Cholesterol Level (mg/dL)", min_value=0.0, max_value=500.0, value=200.0, step=0.1)
+    st.write("Use formula: (Your BMI - 12.0499)/(43.32987-12.0499)")
     bmi = st.number_input("BMI", min_value=0.0, max_value=50.0, value=25.0, step=0.1)
+    st.write("Use formula: (Your Blood Glucose Level - 69.86688)/(185.7361-69.86688)")
     blood_glucose_level = st.number_input("Blood Glucose Level (mg/dL)", min_value=0.0, max_value=500.0, value=100.0, step=0.1)
+    st.write("Use formula: (Your Bone Density + 0.21979)/(1.999829+0.21979)")
     bone_density = st.number_input("Bone Density (g/cm²)", min_value=0.0, max_value=5.0, value=1.0, step=0.1)
+    st.write("Use formula: (Your Vision Sharpness - 0.2)/(1.062537-0.2)")
     vision_sharpness = st.number_input("Vision Sharpness", min_value=0.0, max_value=10.0, value=8.0, step=0.1)
+    st.write("Use formula: (Your Hearing Ability - 0)/(94.00382-0)")
     hearing_ability = st.number_input("Hearing Ability (dB)", min_value=0.0, max_value=100.0, value=20.0, step=0.1)
+    st.write("Use formula: (Your Cognitive Function - 30.3821)/(106.4798-30.3821)")
     cognitive_function = st.number_input("Cognitive Function", min_value=0.0, max_value=100.0, value=7.0, step=0.1)
+    st.write("Use formula: (Your Stress Level - 1.000428)/(9.996323-1.000428)")
     stress_levels = st.number_input("Stress Levels", min_value=0.0, max_value=10.0, value=5.0, step=0.1)
+    st.write("Use formula: (Your Pollution Exposure - 0.006395)/(9.99809-0.006395)")
     pollution_exposure = st.number_input("Pollution Exposure", min_value=0.0, max_value=10.0, value=5.0, step=0.1)
+    st.write("Use formula: (Your Sun Exposure - 0.002055)/(11.9925-0.002055)")
     sun_exposure = st.number_input("Sun Exposure", min_value=0.0, max_value=10.0, value=5.0, step=0.1)
+    st.write("Use formula: (Your Systolic BP - 97)/(193-97)")
     systolic_bp = st.number_input("Systolic BP", min_value=0.0, max_value=200.0, value=120.0, step=0.1)
+    st.write("Use formula: (Your Diastolic BP - 60)/(133-60)")
     diastolic_bp = st.number_input("Diastolic BP", min_value=0.0, max_value=120.0, value=80.0, step=0.1)
     gender_female = st.selectbox("Gender", ["female", "male"], key="gender_female") == "female"
     gender_male = not gender_female
