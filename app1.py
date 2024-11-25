@@ -181,7 +181,6 @@ st.title("Chronological Age Prediction Model")
 st.write("Team Members: Prathamesh Ravindra Varhadpande, Nikhil Gokhale, Nachiket Shyam Dabhade")
 st.write("Please enter your health details:")
 
-
 # Main code to display Streamlit UI
 def main():
     
